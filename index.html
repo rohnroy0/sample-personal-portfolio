@@ -143,22 +143,22 @@
                 <form id="submit-form" > 
                     <div class="form-row ">
                       <div class="form-group col-md-6 ">
-                        <input type="text" class="form-control " id="" placeholder="Name">
+                        <input type="text" class="form-control  " id="namefooter" placeholder="Name">
                       </div>
                       <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="" placeholder="Place">
+                        <input type="text" class="form-control" id="placefooter" placeholder="Place">
                       </div>
                     </div> 
                     <div class="form-row ">
                         <div class="form-group col-md-6 ">
-                          <input type="email" class="form-control " id="" placeholder="Email">
+                          <input type="email" class="form-control " id="emailfooter" placeholder="Email">
                         </div>
                         <div class="form-group col-md-6">
-                          <input type="tel" class="form-control" id="" placeholder="Mobile">
+                          <input type="tel" class="form-control" id="mobilefooter" placeholder="Mobile">
                         </div>
                       </div>
                    
-                      <textarea name="" id="" cols="30" rows="10" class="col-md-12" style="height: 8em;" placeholder="Type your message here..."></textarea>
+                      <textarea name="" id="comment-sec" cols="30" rows="10" class="col-md-12" style="height: 8em;" placeholder="Type your message here..."></textarea>
                    
                    
                     <button type="submit" class="btn btn-success" style="width: 100%;;">Submit</button>
@@ -206,6 +206,45 @@
       })
     </script>
 
+    <script>
+      $(document).ready(function(){
+        $("#namefooter").focus(function(){
+          $(this).css("background-color","#3EB249")
+          $("#namefooter").blur(function(){
+            $(this).css("background-color","white")
+            var text=$(this).val()
+            if(text<4){
+         //     alert("Enter a valid name")
+            }
+            $("#placefooter").focus(function(){
+              $(this).css("background-color","#3EB249")
+              $("#placefooter").blur(function(){
+                $(this).css("background-color","white")
+              })
+            })
+            $("#emailfooter").focus(function(){
+              $(this).css("background-color","#3EB249")
+              $("#emailfooter").blur(function(){
+                $(this).css("background-color","white")
+              })
+            })
+            $("#mobilefooter").focus(function(){
+              $(this).css("background-color","#3EB249")
+              $("#mobilefooter").blur(function(){
+                $(this).css("background-color","white")
+              })
+            })
+            $("#comment-sec").focus(function(){
+              $(this).css("background-color","#3EB249")
+              $("#comment-sec").blur(function(){
+                $(this).css("background-color","white")
+              })
+            })
+          })
+        })
+      })
+    </script>
+
 <script
   src="https://code.jquery.com/jquery-3.7.0.js"
   integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
@@ -213,6 +252,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/ea7b4278b5.js" crossorigin="anonymous"></script>
+
 
 
 
