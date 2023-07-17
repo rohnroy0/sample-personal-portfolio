@@ -223,6 +223,26 @@
             })
       })
     </script>
+    
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbxunRjA96-UN_13iaglqsi70_r5Mx4FrbMOmrQA84UwEyIKMCkxfMACbVBRFyxDNvBX/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+    
+              }
+          })
+      })
+    </script>
 
 <script
   src="https://code.jquery.com/jquery-3.7.0.js"
