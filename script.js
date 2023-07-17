@@ -3,7 +3,8 @@ $(document).ready(function(){
         rules:{
             fname:{
                 required:true,
-                minlength:2
+                minlength:2,
+                maxlength:8
             },
             place:{
                 required:true,
