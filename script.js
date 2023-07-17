@@ -18,7 +18,8 @@ $(document).ready(function(){
 
             },
             message:{
-                required:true
+                required:true,
+                minlength:4
             }
 
 
