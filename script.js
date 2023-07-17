@@ -7,7 +7,7 @@ $(document).ready(function(){
             },
             place:{
                 required:true,
-                minlength:
+                minlength:3
             },
             email:{
                 required:true,
