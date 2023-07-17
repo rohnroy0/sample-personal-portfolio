@@ -7,7 +7,7 @@ $(document).ready(function(){
             },
             place:{
                 required:true,
-                minlength:2
+                minlength:
             },
             email:{
                 required:true,
@@ -26,7 +26,7 @@ $(document).ready(function(){
                 minlength:"enter a valid name"
             },
             place:{
-                minlenth:"enter a valid place"
+                minlength:"enter a valid place"
             },
             mobile:{
                 minlength:"enter a valid number",
