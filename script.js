@@ -4,7 +4,6 @@ $(document).ready(function(){
             fname:{
                 required:true,
                 minlength:2,
-                maxlength:8
             },
             place:{
                 required:true,
