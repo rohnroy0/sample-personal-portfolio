@@ -1,1 +1,1 @@
-# Sample-static-website
+Static-website
