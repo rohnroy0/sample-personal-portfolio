@@ -1,1 +1,2 @@
-Static-website
+This is a fully responsive sample personal portfolio
+
